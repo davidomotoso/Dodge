@@ -2,22 +2,22 @@ const ServiceTest = () => {
   const texts = [
     {
       title: "Engine upgrades",
-      body: "Elevate your vehicles' performance, with Dodge's engine upgrades",
+      body: "Elevate your vehicles' performance, with Dodge's engine upgrades.",
       icon: "bi bi-chevron-double-up",
     },
     {
       title: "Free Support",
-      body: "Dodge aims to provide a comprehensive support ecosystem to enhance the ownership experience",
+      body: "Dodge aims to provide a comprehensive support ecosystem to enhance the ownership experience.",
       icon: "bi bi-tools",
     },
     {
       title: "Security  inspections",
-      body: "Dodge is committed to ensuring the their occupants",
+      body: "Dodge is committed to ensuring the their occupants.",
       icon: "bi bi-shield-check",
     },
     {
       title: "Brake checkup",
-      body: "well-engineered brake systems that prioritize safety and reliability",
+      body: "well-engineered brake systems that prioritize safety and reliability.",
       icon: "bi bi-ev-front",
     },
   ];

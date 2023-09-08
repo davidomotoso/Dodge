@@ -3,7 +3,7 @@ import MediaIcon from "./mediaIcon";
 const HeroText = () => {
   return (
     <aside className="text-white w-80 relative -mb-6 z-10">
-      <h1 className="text-[#3d3d47] font-semibold text-9xl relative top-8 -mb-4 -z-10">
+      <h1 className="text-[#3d3d47] font-semibold text-9xl relative top-5 -mb-4 -z-10">
         CHALLENGER
       </h1>
       <section className="mb-5">

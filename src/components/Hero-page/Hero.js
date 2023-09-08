@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <section
       className="bg-[#1b1b23] w-full h-[100vh]
-    px-8 pt-4"
+    px-8 pt-2"
     >
       <section className="w-[75em] h-full mx-auto">
         <NavBar />
-        <section className="flex justify-center items-center gap-10 h-[94.2%]">
+        <section className="flex justify-between items-center  h-[94.2%]">
           <HeroText />
           <HeroImage />
         </section>

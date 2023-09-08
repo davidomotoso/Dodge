@@ -9,8 +9,8 @@ export const Title = () => {
 export const NavIcons = () => {
   return (
     <section className="text-white text-lg flex items-center gap-7">
-      <i class="bi bi-telephone"></i>
-      <i class="bi bi-search"></i>
+      <i className="bi bi-telephone"></i>
+      <i className="bi bi-search"></i>
     </section>
   );
 };
