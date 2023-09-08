@@ -1,10 +1,12 @@
-import "../index.css";
+import About from "../components/About-page/About";
+import Hero from "../components/Hero-page/Hero";
+import Services from "../components/car-services/services";
 const Home = () => {
   return (
     <main>
-      <h1 className="text-amber-300 bg bg-black">
-        Welcome to dodge automobile
-      </h1>
+      <Hero />
+      <About />
+      <Services />
     </main>
   );
 };
