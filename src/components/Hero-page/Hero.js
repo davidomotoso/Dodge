@@ -1,6 +1,5 @@
 import NavBar from "../NavBar/NavBar";
-import HeroImage from "./Hero-image";
-import HeroText from "./Hero-text";
+import Herocombo from "./HeroCombo";
 
 const Hero = () => {
   return (
@@ -10,10 +9,7 @@ const Hero = () => {
     >
       <section className="w-[75em] h-full mx-auto">
         <NavBar />
-        <section className="flex justify-between items-center  h-[94.2%]">
-          <HeroText />
-          <HeroImage />
-        </section>
+        <Herocombo />
       </section>
     </section>
   );

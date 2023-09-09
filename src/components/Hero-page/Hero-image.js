@@ -1,13 +1,22 @@
-import challenger from "../../assets/Hero-images/challenger.png";
-const HeroImage = () => {
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+const HeroImage = ({ image }) => {
   return (
-    <aside>
-      <figure className="w-max relative z-20">
-        <img
-          src={challenger}
-          alt="dodge challenger"
-          className="drop-shadow-[-5px_-10px_150px_#595872]"
-        />
+    <aside className="overflow-hidden">
+      <figure className="relative z-20 w-[54.36em] flex items-center justify-between">
+        <Carousel
+          showArrows={false}
+          showThumbs={false}
+          showIndicators={false}
+          showStatus={false}
+          autoPlay
+          infiniteLoop
+          interval={1800}
+        >
+          {image.map((img, index) => (
+            <img key={index} src={img.src} alt={img.name} />
+          ))}
+        </Carousel>
       </figure>
     </aside>
   );
