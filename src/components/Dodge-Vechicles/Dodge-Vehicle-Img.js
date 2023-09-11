@@ -3,7 +3,8 @@ import sedan from "../../assets/vehicles-images/charger sedan.png";
 import challenger from "../../assets/vehicles-images/challenger.png";
 import hornet from "../../assets/vehicles-images/hornet.png";
 import dakota from "../../assets/vehicles-images/dakota.png";
-const VehicleImg = () => {
+import { useEffect, useRef } from "react";
+const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
   const vehicles = [
     {
       name: "2023 Charger",
@@ -31,19 +32,39 @@ const VehicleImg = () => {
       price: "£36,820",
     },
   ];
+  const vehicleContainer = useRef();
+  let Challenger;
+  let Hornet;
+  let slideButton = useRef();
+  let next;
+  let prev;
+  useEffect(() => {
+    const vehicleTag = vehicleContainer.current;
+    Challenger = vehicleTag.children[2].children[0].children[0];
+    Hornet = vehicleTag.children[3].children[0].children[0];
+    prev = slideButton.current.children[1];
+    next = slideButton.current.children[0];
+  });
   return (
     <section className="relative h-full">
       <section className="bg-[#595872] w-full h-64 blur-[140px] absolute bottom-56"></section>
-
       <section className="overflow-hidden h-[97%] ">
-        <section className="w-[128.5em] h-full flex flex-row justify-between items-center relative">
+        <section
+          style={scroll}
+          className="w-[128.5em] h-full flex flex-row justify-between items-center relative duration-500"
+          ref={vehicleContainer}
+        >
           {vehicles.map((vehicle, index) => (
             <section
               key={index}
               className="flex flex-col items-start justify-center relative w-96"
             >
               <figure>
-                <img src={vehicle.src} alt={vehicle.name} className="w-full" />
+                <img
+                  src={vehicle.src}
+                  alt={vehicle.name}
+                  className="w-80 duration-500"
+                />
                 <figcaption className="text-white text-2xl font-semibold">
                   {vehicle.name}
                 </figcaption>
@@ -64,6 +85,25 @@ const VehicleImg = () => {
               </button>
             </section>
           ))}
+        </section>
+      </section>
+      <section className="text-white text-2xl relative">
+        <section
+          className=" flex flex-col gap-2 absolute -top-72 right-0"
+          ref={slideButton}
+        >
+          <button
+            className="disabled:text-gray-500"
+            onClick={(e) => nextFunc(e, prev, Challenger, Hornet)}
+          >
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
+          <button
+            className="disabled:text-gray-500"
+            onClick={(e) => prevFunc(e, next, Challenger, Hornet)}
+          >
+            <i className="fa-solid fa-arrow-left"></i>
+          </button>
         </section>
       </section>
     </section>
