@@ -4,11 +4,13 @@ import ScrollAnimation from "./scroll";
 
 const Dodge = () => {
   const [carSlide, setcarSlide] = useState(0);
+  const [whiteScroll, setWhiteScroll] = useState(0);
   const animationStyle = "scale:1.3;translate:0 -40px";
-  const normalStyle = "scale:inherit;translate:0";
+  const normalStyle = "scale:1.1;translate:0";
   const handleNextSlide = (e, prevButton, challenger, hornet) => {
     prevButton.disabled = false;
-    if (carSlide == 0) {
+    setWhiteScroll((prevScroll) => prevScroll + 1);
+    if (carSlide === 0) {
       setcarSlide((prevNum) => prevNum - 410);
       challenger.style = `${animationStyle} `;
     } else if (carSlide === -410) {
@@ -22,11 +24,13 @@ const Dodge = () => {
     nextButton.disabled = false;
     if (carSlide === -820) {
       setcarSlide((prevNum) => prevNum + 410);
+      setWhiteScroll((prevScroll) => prevScroll - 1);
       hornet.style = `${normalStyle}`;
       challenger.style = `${animationStyle}`;
     } else if (carSlide === -410) {
       challenger.style = `${normalStyle}`;
       setcarSlide((prevNum) => prevNum + 410);
+      setWhiteScroll((prevScroll) => prevScroll - 1);
       e.target.parentElement.disabled = true;
     }
   };
@@ -42,7 +46,7 @@ const Dodge = () => {
           prevFunc={handlePrevSlide}
           scroll={translate}
         />
-        <ScrollAnimation />
+        <ScrollAnimation bgChange={whiteScroll} />
         <h1 className="text-[#26262d] text-9xl font-bold absolute -bottom-4 -right-16">
           Dodge
         </h1>
