@@ -1,6 +1,6 @@
 const AboutText = () => {
   return (
-    <aside className="w-[35rem]">
+    <aside className="sm:w-[35rem]">
       <section>
         <h2 className="text-4xl font-bold mb-6">About us</h2>
         <h3 className="font-semibold text-[1.2rem] mb-7">

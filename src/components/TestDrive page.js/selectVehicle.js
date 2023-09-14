@@ -1,7 +1,7 @@
 const VehicleSelect = () => {
   const vehicles = ["Challenger", "Charger", "Viper", "Durango"];
   return (
-    <aside className="w-80 pt-20 pb-8">
+    <aside className="w-80 xl:pt-20 py-12 xl:pb-8">
       <h3 className="text-2xl font-medium text-white mb-5">
         Select the Vehicle
       </h3>

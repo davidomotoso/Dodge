@@ -40,14 +40,14 @@ const Dodge = () => {
   };
   return (
     <section className="bg-[#1b1b23] h-[100vh] p-8 relative overflow-hidden">
-      <section className="w-[75em] mx-auto h-full relative">
+      <section className="xl:w-[75em] mx-auto h-full relative">
         <VehicleImg
           nextFunc={handleNextSlide}
           prevFunc={handlePrevSlide}
           scroll={translate}
         />
         <ScrollAnimation bgChange={whiteScroll} />
-        <h1 className="text-[#26262d] text-9xl font-bold absolute -bottom-4 -right-16">
+        <h1 className="text-[#26262d] text-9xl font-bold absolute -bottom-4 -right-8">
           Dodge
         </h1>
       </section>

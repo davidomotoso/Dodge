@@ -31,7 +31,7 @@ const Herocombo = () => {
     setActiveSlide(index);
   };
   return (
-    <section className="flex justify-between relative items-center h-[94.2%]">
+    <section className="flex flex-wrap gap-y-32 justify-between relative items-center mobile:mt-44 xl:mt-0 h-[94.2%]">
       <div className="bg-[#595872] h-96 w-[45rem] blur-[140px] absolute left-80 bottom-44"></div>
       <HeroText text={HeroVehicles} active={activeSlide} />
       <HeroImage image={HeroVehicles} handleSlideChange={handleChange} />

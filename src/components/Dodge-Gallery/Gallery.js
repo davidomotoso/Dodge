@@ -3,7 +3,7 @@ import GalleryLinks from "./navlinks";
 
 const Gallery = () => {
   return (
-    <section className="w-[75em] mx-auto py-14">
+    <section className="xl:w-[75em] mx-auto px-8 py-14">
       <GalleryLinks />
       <GalleryImage />
     </section>

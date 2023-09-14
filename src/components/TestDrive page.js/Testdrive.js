@@ -6,9 +6,9 @@ import VehicleSelect from "./selectVehicle";
 const TestDrive = () => {
   return (
     <section className="bg-[#1f1f29] p-8">
-      <section className="w-[75em] mx-auto">
+      <section className="xl:w-[75em] mx-auto">
         <Heading />
-        <section className="flex bg-[#23232d] px-16  border border-gray-400 rounded-lg items-start justify-center w-max mx-auto">
+        <section className="flex xl:flex-row flex-col bg-[#23232d] sm:px-16 px-8 border border-gray-400 rounded-lg xl:items-start justify-center sm:w-max mx-auto">
           <VehicleSelect />
           <ContactInfo />
         </section>

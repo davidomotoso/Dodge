@@ -2,7 +2,7 @@ const CopyRight = () => {
   return (
     <section className="mt-16">
       <hr />
-      <section className="flex items-center justify-between pt-9">
+      <section className="flex items-center justify-between flex-wrap gap-5 pt-9">
         <section className="text-white text-lg">
           <p>
             <span>All Rights Reserved </span>

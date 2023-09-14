@@ -4,6 +4,7 @@ import challenger from "../../assets/vehicles-images/challenger.png";
 import hornet from "../../assets/vehicles-images/hornet.png";
 import dakota from "../../assets/vehicles-images/dakota.png";
 import { useEffect, useRef } from "react";
+import MobileDodgecarousel from "./MobileDodgeCarousel";
 const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
   const vehicles = [
     {
@@ -51,13 +52,13 @@ const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
       <section className="overflow-hidden h-[97%] ">
         <section
           style={scroll}
-          className="w-[128.5em] h-full flex flex-row justify-between items-center relative duration-500"
+          className="w-[128.5em] h-full xl:flex hidden flex-row justify-between items-center relative duration-500"
           ref={vehicleContainer}
         >
           {vehicles.map((vehicle, index) => (
             <section
               key={index}
-              className="flex flex-col items-start justify-center relative w-96"
+              className="flex flex-col items-start justify-center relative w-96 h-[25rem]"
             >
               <figure>
                 <img
@@ -69,7 +70,7 @@ const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
                   {vehicle.name}
                 </figcaption>
               </figure>
-              <section className="mb-6 mt-3 pl-3">
+              <section className="mb-6 mt-3 text-center w-48">
                 <span className="text-gray-400 font-semibold text-[1.05em] mt-6 mb-4">
                   Now starting at
                 </span>
@@ -86,8 +87,9 @@ const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
             </section>
           ))}
         </section>
+        <MobileDodgecarousel vehicles={vehicles} />
       </section>
-      <section className="text-white text-2xl relative">
+      <section className="text-white text-2xl relative xl:block hidden">
         <section
           className=" flex flex-col gap-2 absolute -top-72 right-0"
           ref={slideButton}

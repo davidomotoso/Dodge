@@ -1,6 +1,6 @@
 const ContactInfo = () => {
   return (
-    <aside className="w-[27rem] border-l pt-20 pl-8 pb-8">
+    <aside className="sm:w-[27rem] xl:border-l border-t xl:pt-20 pt-12 xl:pl-8 pb-8">
       <h3 className="text-white text-2xl font-medium mb-5">
         CONTACT INOFRMATION
       </h3>

@@ -1,7 +1,7 @@
 const CustomerService = () => {
   return (
     <section className="text-white">
-      <section className="w-96 mb-5">
+      <section className="sm:w-96 mb-5">
         <p>
           Chrysler, Dodge, Jeep, Ram, Wagoneer, Mopar and SRT are registered
           trademarks of FCA US LLC. ALFA ROMEO and FIAT are registered

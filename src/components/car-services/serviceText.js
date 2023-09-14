@@ -1,4 +1,4 @@
-const ServiceTest = () => {
+const ServiceText = () => {
   const texts = [
     {
       title: "Engine upgrades",
@@ -27,15 +27,17 @@ const ServiceTest = () => {
         <section
           key={index}
           className="flex flex-col
-          gap-12 w-[17rem]"
+          gap-12 sm:items-start items-center justify-center sm:w-[17rem]"
         >
-          <section className="w-max h-max hover:scale-105 duration-500">
+          <section className="w-max hover:scale-105 duration-500">
             <i
-              className={`${text.icon} text-6xl shadow-lg shadow-black/50 w-max h-max px-8 py-6 rounded-full `}
+              className={`${text.icon} text-6xl shadow-lg shadow-black/50 w-max block px-8 py-6 rounded-full h-[1.96em] `}
             />
           </section>
           <section>
-            <h3 className="text-lg font-bold mb-3">{text.title}</h3>
+            <h3 className="text-lg sm:text-left text-center font-bold mb-3">
+              {text.title}
+            </h3>
             <p className="text-lg leading-relaxed font-normal">{text.body}</p>
           </section>
         </section>
@@ -44,4 +46,4 @@ const ServiceTest = () => {
   );
 };
 
-export default ServiceTest;
+export default ServiceText;
