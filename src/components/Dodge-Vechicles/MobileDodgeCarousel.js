@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 const MobileDodgecarousel = ({ vehicles }) => {
   return (
-    <section className="w-full h-full xl:hidden relative">
+    <section className="w-full h-full sm:grid place-content-center xl:hidden relative">
       <Carousel
         showStatus={false}
         showThumbs={false}
@@ -17,7 +17,7 @@ const MobileDodgecarousel = ({ vehicles }) => {
             className="flex flex-col items-center justify-center relative w-full pb-10"
           >
             <figure>
-              <img src={vehicle.src} alt={vehicle.name} className="mb-3" />
+              <img src={vehicle.src} alt={vehicle.name} className="mb-3 w-64" />
               <figcaption className="text-white text-2xl font-semibold">
                 {vehicle.name}
               </figcaption>

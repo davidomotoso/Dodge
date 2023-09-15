@@ -1,6 +1,9 @@
 const ContactInfo = () => {
   return (
-    <aside className="sm:w-[27rem] xl:border-l border-t xl:pt-20 pt-12 xl:pl-8 pb-8">
+    <aside
+      className="sm:w-[27rem] xl:border-l border-t xl:pt-20 pt-12 xl:pl-8 pb-8"
+      id="contact"
+    >
       <h3 className="text-white text-2xl font-medium mb-5">
         CONTACT INOFRMATION
       </h3>

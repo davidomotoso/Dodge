@@ -39,7 +39,10 @@ const Dodge = () => {
     transform: `translateX(${carSlide}px)`,
   };
   return (
-    <section className="bg-[#1b1b23] h-[100vh] p-8 relative overflow-hidden">
+    <section
+      className="bg-[#1b1b23] h-[100vh] sm:pt-8 pt-12 pb-6 sm:px-4 px-0 relative overflow-hidden"
+      id="vehicles"
+    >
       <section className="xl:w-[75em] mx-auto h-full relative">
         <VehicleImg
           nextFunc={handleNextSlide}

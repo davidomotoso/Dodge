@@ -8,7 +8,7 @@ const Deatils = () => {
   ];
   const locate = ["Shop Online", "Find a Dealer"];
   return (
-    <section className="flex items-start justify-between flex-wrap gap-y-16 gap-5 text-white w-[35rem]">
+    <section className="flex items-start justify-between flex-wrap gap-y-16 gap-5 text-white sm:w-[35rem]">
       <section>
         <h2 className="text-2xl font-semibold uppercase mb-6">Vehicles</h2>
         <ul className="flex flex-col gap-6">

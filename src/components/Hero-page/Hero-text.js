@@ -15,16 +15,14 @@ const HeroText = ({ text, active }) => {
     }
   };
   return (
-    <aside className="text-white w-80 relative -mb-6 z-10 ">
-      <section className="overflow-hidden absolute -z-10 -top-20">
-        <section className="flex w-[49em] iems-center justify-between h-32">
-          <h1 className="w-full text-[#3d3d47] font-semibold text-9xl -mb-4 pl-1">
-            {Text(active)}
-          </h1>
-        </section>
+    <aside className="text-white w-80 relative -mb-6 z-10">
+      <section className="absolute -z-10 -top-20">
+        <h1 className="md:block hidden text-[#3d3d47] font-semibold text-9xl -mb-4 pl-1">
+          {Text(active)}
+        </h1>
       </section>
       <section className="mb-5">
-        <h2 className="text-6xl font-semibold">{Text(active)}</h2>
+        <h2 className="md:text-6xl text-5xl font-semibold">{Text(active)}</h2>
       </section>
       <section className="mb-6 text-lg font-normal">
         <p>Expand the actual teaching of the great explorer of the truth</p>
