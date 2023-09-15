@@ -1,7 +1,11 @@
+// Import the MediaIcon component from the specified path
 import MediaIcon from "./mediaIcon";
 
+// Define a functional component named HeroText that takes 'text' and 'active' as props
 const HeroText = ({ text, active }) => {
+  // Define a function 'Text' that takes 'slideIndex' as an argument
   const Text = (slideIndex) => {
+    // Check the value of 'slideIndex' and return the corresponding name from the 'text' array
     if (slideIndex === 0) {
       return text[0].name;
     } else if (slideIndex === 1) {
@@ -14,14 +18,18 @@ const HeroText = ({ text, active }) => {
       return text[4].name;
     }
   };
+
+  // Render the following JSX
   return (
     <aside className="text-white w-80 relative -mb-6 z-10">
       <section className="absolute -z-10 -top-20">
+        {/* Render an h1 element with specific styling and the result of the 'Text' function */}
         <h1 className="md:block hidden text-[#3d3d47] font-semibold text-9xl -mb-4 pl-1">
           {Text(active)}
         </h1>
       </section>
       <section className="mb-5">
+        {/* Render an h2 element with specific styling and the result of the 'Text' function */}
         <h2 className="md:text-6xl text-5xl font-semibold">{Text(active)}</h2>
       </section>
       <section className="mb-6 text-lg font-normal">
@@ -33,8 +41,11 @@ const HeroText = ({ text, active }) => {
       >
         Know More
       </button>
+      {/* Render the MediaIcon component */}
       <MediaIcon />
     </aside>
   );
 };
+
+// Export the HeroText component as the default export of this module
 export default HeroText;
