@@ -1,3 +1,4 @@
+// Define a functional component named AboutText
 const AboutText = () => {
   return (
     <aside className="sm:w-[35rem]">
@@ -9,6 +10,7 @@ const AboutText = () => {
       </section>
       <section className="text-lg leading-normal font-medium mb-8">
         <p>
+          {/* Displaying a paragraph of text */}
           On the other hand we denounce with righteous indignation and dislike
           men who are so beguiled and demoralized by the charms of pleasure of
           the moment, so blinded by desire, that cannot foresee the pain and est
@@ -17,9 +19,12 @@ const AboutText = () => {
         </p>
       </section>
       <button className="font-semibold rounded-full border-2 border-black py-4 px-12 hover:text-[#ffba00] hover:border-[#ffba00] duration-500">
+        {/* A button with "Know More" text */}
         Know More
       </button>
     </aside>
   );
 };
+
+// Export the AboutText component
 export default AboutText;
