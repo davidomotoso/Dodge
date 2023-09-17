@@ -1,11 +1,18 @@
+// Import necessary libraries and components
 import { useEffect, useRef } from "react";
 
+// Define the ScrollAnimation component
 const ScrollAnimation = ({ bgChange }) => {
+  // Create refs for DOM elements
   let firstScroll = useRef();
   let secondscroll = useRef();
   let thirdScroll = useRef();
+
+  // Define CSS classes for background colors
   const white = "bg-white";
   const gray = "bg-gray-400";
+
+  // Function to assign CSS classes based on bgChange prop
   const assignedClass = () => {
     if (bgChange === 0) {
       firstScroll.current.classList.add(`${white}`);
@@ -26,11 +33,15 @@ const ScrollAnimation = ({ bgChange }) => {
       thirdScroll.current.classList.add(`${white}`);
     }
   };
+
+  // Call assignedClass function when bgChange prop changes
   useEffect(() => {
     assignedClass();
   }, [bgChange, assignedClass]);
+
   return (
     <section className="xl:flex hidden gap-5 items-center justify-center mt-5 pb-4 absolute bottom-2 left-[50%]">
+      {/* Display three animated circles with changing background colors */}
       <div
         className="bg-white h-3 w-3 rounded-full relative before:absolute before:border before:w-5 scale-105 before:border-gray-400 before:top-[0.37em] before:left-3 duration-500"
         ref={firstScroll}
@@ -47,4 +58,5 @@ const ScrollAnimation = ({ bgChange }) => {
   );
 };
 
+// Export the ScrollAnimation component
 export default ScrollAnimation;

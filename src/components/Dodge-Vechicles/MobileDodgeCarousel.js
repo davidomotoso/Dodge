@@ -1,8 +1,12 @@
+// Import necessary libraries and components
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+
+// Define the MobileDodgecarousel component
 const MobileDodgecarousel = ({ vehicles }) => {
   return (
     <section className="w-full h-full sm:grid place-content-center xl:hidden relative">
+      {/* Create a responsive carousel */}
       <Carousel
         showStatus={false}
         showThumbs={false}
@@ -17,6 +21,7 @@ const MobileDodgecarousel = ({ vehicles }) => {
             className="flex flex-col items-center justify-center relative w-full pb-10"
           >
             <figure>
+              {/* Display the vehicle image */}
               <img src={vehicle.src} alt={vehicle.name} className="mb-3 w-64" />
               <figcaption className="text-white text-2xl font-semibold">
                 {vehicle.name}
@@ -43,4 +48,5 @@ const MobileDodgecarousel = ({ vehicles }) => {
   );
 };
 
+// Export the MobileDodgecarousel component
 export default MobileDodgecarousel;

@@ -1,14 +1,20 @@
+// Import images for the gallery
 import exterior from "../../assets/GalleryImages/exterior.png";
 import capability from "../../assets/GalleryImages/capability.png";
 import interior from "../../assets/GalleryImages/interior.png";
+
+// Define the GalleryImage component
 const GalleryImage = () => {
+  // Create an array of image objects with source and description
   const images = [
     { src: exterior, desc: "Exterior" },
     { src: interior, desc: "Interior" },
     { src: capability, desc: "Capability" },
   ];
+
   return (
     <section className="flex xl:flex-row flex-col items-center mt-6">
+      {/* Map over the images and render them */}
       {images.map((image, index) => (
         <figure
           key={index}
@@ -28,4 +34,5 @@ const GalleryImage = () => {
   );
 };
 
+// Export the GalleryImage component
 export default GalleryImage;
