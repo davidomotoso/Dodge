@@ -3,7 +3,7 @@ const ContactInfo = () => {
   return (
     <aside
       // Apply styling for the contact information section
-      className="sm:w-[27rem] xl:border-l border-t xl:pt-20 pt-12 xl:pl-8 pb-8"
+      className="sm:w-[27rem] xl:border-l xl:border-t-0 border-t xl:pt-20 pt-12 xl:pl-8 pb-8"
       id="contact"
     >
       {/* Display a heading for the contact information */}

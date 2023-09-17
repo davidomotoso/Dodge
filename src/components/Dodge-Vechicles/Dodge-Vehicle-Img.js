@@ -56,7 +56,7 @@ const VehicleImg = ({ nextFunc, prevFunc, scroll }) => {
     Hornet = vehicleTag.children[3].children[0].children[0];
     prev = slideButton.current.children[1];
     next = slideButton.current.children[0];
-  }, []);
+  });
 
   return (
     <section className="relative h-full">

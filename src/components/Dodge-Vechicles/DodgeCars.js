@@ -16,8 +16,8 @@ const Dodge = () => {
   // Function to handle next slide button click
   const handleNextSlide = (e, prevButton, challenger, hornet) => {
     prevButton.disabled = false;
+    console.log(e.target.parentElement);
     setWhiteScroll((prevScroll) => prevScroll + 1);
-
     // Check the current slide position and update accordingly
     if (carSlide === 0) {
       setCarSlide((prevNum) => prevNum - 410);

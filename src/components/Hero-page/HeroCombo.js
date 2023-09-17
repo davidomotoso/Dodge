@@ -33,7 +33,7 @@ const Herocombo = () => {
 
   // Render the Herocombo component
   return (
-    <section className="flex flex-wrap gap-y-32 justify-between relative items-center sm:mt-44 xl:mt-0 mt-36 h-[94%]">
+    <section className="flex flex-wrap gap-y-28 justify-between relative items-center sm:mt-36 xl:mt-0 mt-36 h-[94%]">
       {/* Create a background div with specific styling */}
       <div className="bg-[#595872] h-96 w-full xl:w-[45rem] blur-[140px] absolute xl:left-80 bottom-44"></div>
 
