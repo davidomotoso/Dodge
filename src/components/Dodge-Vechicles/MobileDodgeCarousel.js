@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 // Define the MobileDodgecarousel component
 const MobileDodgecarousel = ({ vehicles }) => {
   return (
-    <section className="w-full h-full sm:grid place-content-center xl:hidden relative">
+    <section className="w-full h-full sm:grid place-content-center xl:hidden relative z-20">
       {/* Create a responsive carousel */}
       <Carousel
         showStatus={false}

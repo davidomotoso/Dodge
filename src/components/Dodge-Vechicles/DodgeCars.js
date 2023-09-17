@@ -55,7 +55,7 @@ const Dodge = () => {
 
   return (
     <section
-      className="bg-[#1b1b23] h-[100vh] sm:pt-8 pt-12 pb-6 sm:px-4 px-0 relative overflow-hidden"
+      className="bg-[#1b1b23] xl:h-[100vh] sm:pt-8 pt-12 pb-6 sm:px-4 px-0 relative overflow-hidden"
       id="vehicles"
     >
       <section className="xl:w-[75em] mx-auto h-full relative">

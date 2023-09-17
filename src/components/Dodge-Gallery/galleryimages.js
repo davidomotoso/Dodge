@@ -18,7 +18,7 @@ const GalleryImage = () => {
       {images.map((image, index) => (
         <figure
           key={index}
-          className="overflow-hidden xl:h-72 sm:h-80 h-64 sm:w-96 w-full xl:w-auto"
+          className="overflow-hidden xl:h-72 h-80 sm:h-64 sm:w-96 w-full xl:w-full"
         >
           <img
             className="hover:scale-125 cursor-pointer duration-500 w-full h-full"
