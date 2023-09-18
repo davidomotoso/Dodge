@@ -16,25 +16,25 @@ const ContactInfo = () => {
           type="text"
           name="Name"
           placeholder="Name"
-          className="rounded-full p-4 py-3 w-full placeholder:font-medium placeholder:text-white bg-[#2c2c36] text-white text-lg"
+          className="rounded-full p-4 py-3 w-full placeholder:text-white bg-[#2c2c36] text-white text-lg font-medium"
         />
         <input
           type="text"
           name="Email"
           placeholder="Email"
-          className="rounded-full p-4 py-3 w-full placeholder:font-medium placeholder:text-white bg-[#2c2c36] text-white text-lg"
+          className="rounded-full p-4 py-3 w-full placeholder:text-white bg-[#2c2c36] text-white text-lg font-medium"
         />
         <input
           type="tel"
           name="telephone"
           placeholder="Telephone"
-          className="rounded-full p-4 py-3 w-full placeholder:font-medium placeholder:text-white bg-[#2c2c36] text-white text-lg"
+          className="rounded-full p-4 py-3 w-full placeholder:text-white bg-[#2c2c36] text-white text-lg font-medium"
         />
         <section>
           {/* Create a radio button for privacy policy agreement */}
           <input
             type="radio"
-            name="privacypolicy"
+            name="privacy-policy"
             className="accent-[#ffba00]"
           />
           {/* Display text related to the privacy policy */}
